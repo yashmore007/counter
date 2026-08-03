@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <div class="flex items-center justify-center w-full h-screen">
+      <div class="flex flex-col justify-center gap-20">
+        <divv class="flex justify-center items-center">
+          <h1 class="text-8xl">Counter</h1>
+        </divv>
+        <div class="flex justify-center">
+          <span aria-live="polite" id="count" class="text-9xl">0</span>
+        </div>
+        <div id="btn" class="flex justify-around">
+          <button
+            id="minus"
+            class="cursor-pointer hover:bg-gray-300 mr-12 py-2 px-4 text-2xl border-4 rounded-2xl border-red-500"
+          >
+            Decrease
+          </button>
+          <button
+            id="setZero"
+            class="cursor-pointer hover:bg-gray-300 py-2 px-4 text-2xl border-4 rounded-2xl border-gray-500"
+          >
+            Reset
+          </button>
+          <button
+            id="add"
+            class="cursor-pointer hover:bg-gray-300 ml-12 py-2 px-4 text-2xl border-4 rounded-2xl border-green-500"
+          >
+            Increase
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

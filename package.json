@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "license": "ISC",
   "author": "Yash More",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build:copy": "mkdir -p dist && cp index.html dist/index.html && cp script.js dist/script.js",
+    "build": "npm run build:copy && npm run build:css",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"

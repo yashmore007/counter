@@ -2,4 +2,5 @@
   "assets": {
     "directory": "./dist",
   },
+  "compatibility_date": "2026-08-04",
 }
